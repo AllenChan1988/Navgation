@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style>
+*{ margin:0; padding:0;}
+body{ background:url(2DF41AED-8EC7-4F52-900B-977AAB6D7161.png); font-size:12px;}
+a{text-decoration:none; color:#333;}
+.box{width:100%; position:relative; top:0px; left:0px;}
+.box li{width:14%; background:#fff; float:left; list-style:none; position:relative; overflow:hidden; transition:all 500ms;}
+.box li .border{height:100%; position:absolute; top:0px; left:0px; background:#fff; width:5%; transition:all 500ms;}
+
+/*
+引用服务器字体 设置自定义字体
+@font-face{
+	font-family:'66666';
+	src:url("文字路径");
+	src:url("文字路径") format('turetype'),
+	src:url("文字路径") format('woff');
+	}
+*/
+.box li .icon{ font-size:24px; width:40px; height:40px; margin:10px auto; text-align:center;}
+.box li .text{line-height:24px; text-align:center; text-shadow:0px 0px 5px #ab9e9e; transition:all 500ms;}
+.box li h2{ font-size:20px; font-weight:300;}
+.box li h3{font-size:14px;font-weight:300;}
+/*鼠标经过*/
+.box li:hover{background:#000;}
+.box li:hover .border{background:#ff9900; left:95%;}
+.box li:hover .icon{font-size:60px; color:#ff9900;}
+.box li:hover .text{transform:translate(0px,100px);}
+/*浏览器宽度小于700px时*/
+@media screen and (max-width:740px){
+	.box{width:180px;}
+	.box li{width:100%; margin:5px 0px;}
+	.box li .icon{float:left; margin:30px 5px;}
+	.box li .text{margin:30px 0px;}
+	.box li:hover .text{transform:translate(300px,0px);}
+}
+
+</style>
+</head>
+
+<body>
+<div class="box">
+    <ul>
+		<li>
+        	<div class="border"></div>
+            <div class="icon">🍎</div>
+            <div class="text">
+            <h2><a href="#">首页</a></h2>
+            <h3><a href="#">home</a></h3>
+            </div>
+        </li>
+        <li>
+        	<div class="border"></div>
+            <div class="icon">🍌</div>
+            <div class="text">
+            <h2><a href="#">联系我们</a></h2>
+            <h3><a href="#">contact us</a></h3>
+            </div>
+        </li>
+        <li>
+        	<div class="border"></div>
+            <div class="icon">🍓</div>
+            <div class="text">
+            <h2><a href="#">关于我们</a></h2>
+            <h3><a href="#">about</a></h3>
+            </div>
+        </li>
+        <li>
+        	<div class="border"></div>
+            <div class="icon">🍒</div>
+            <div class="text">
+            <h2><a href="#">HTML5</a></h2>
+            <h3><a href="#">html5</a></h3>
+            </div>
+        </li>
+        <li>
+        	<div class="border"></div>
+            <div class="icon">🍑</div>
+            <div class="text">
+            <h2><a href="#">css3</a></h2>
+            <h3><a href="#">css3</a></h3>
+            </div>
+        </li>
+        <li>
+        	<div class="border"></div>
+            <div class="icon">🌰</div>
+            <div class="text">
+            <h2><a href="#">java</a></h2>
+            <h3><a href="#">java</a></h3>
+            </div>
+        </li>
+        <li>
+        	<div class="border"></div>
+            <div class="icon">🐑</div>
+            <div class="text">
+            <h2><a href="#">ios</a></h2>
+            <h3><a href="#">ios</a></h3>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
